@@ -1,14 +1,7 @@
 from pyzbar import pyzbar
-import argparse
 import cv2
-import os, sys
 
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required=True, help="path to input image")
-args = vars(ap.parse_args())
-
-#images = oslistdir(test-images)
-image = cv2.imread(args["image"])
+image = cv2.imread(test_image.png)
 
 barcodes = pyzbar.decode(image)
 for barcode in barcodes:
